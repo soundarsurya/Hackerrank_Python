@@ -35,7 +35,9 @@ import re
 import sys
 # Complete the solve function below.
 def solve(s):
-    return s.title()
+#    return s.title()
+#it capitalize only letters not numbers.
+     return ' '.join([i.capitalize() for i in s.split(' ')])
     
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
